@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fragments</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_view_animator">View Animator Activity</string>
+    <string name="title_activity_my_activity1">MyActivity1</string>
+    <string name="title_activity_view_switcher_activity2">ViewSwitcherActivity2</string>
+    <string name="title_activity_view_flipper_activity2">ViewFlipperActivity2</string>
+    <string name="title_activity_view_pager_activity3">ViewPagerActivity3</string>
+    <string name="title_activity_view_animations_activity4">ViewAnimationsActivity4</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test_my">TestMyActivity</string>
+    <string name="title_activity_layout_transitions">LayoutTransitionsActivity</string>
+    <string name="title_activity_layout_transitions_activity5">LayoutTransitionsActivity5</string>
+    <string name="title_activity_view_group_animated_activity6">ViewGroupAnimatedActivity6</string>
+    <string name="title_activity_scroller_activity7">ScrollerActivity7</string>
+    <string name="title_activity_fullscreen_activity8">FullscreenActivity8</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_overlay_activity8">OverlayActivity8</string>
+
+</resources>

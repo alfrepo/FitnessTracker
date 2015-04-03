@@ -1,0 +1,8 @@
+<resources>
+
+    <color name="black_overlay">#80000000</color>
+
+    <color name="dummy_color_inactive">#ffffff</color>
+    <color name="dummy_color_active">@android:color/holo_orange_light</color>
+
+</resources>

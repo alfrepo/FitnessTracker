@@ -1,0 +1,40 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- parent view -->
+    <dimen name="padding_top_main_viewparent">0dp</dimen>
+    <dimen name="padding_top_archive_viewparent">10dp</dimen>
+
+    <!-- dummy -->
+    <dimen name="dummy_height">100dp</dimen>
+    <dimen name="dummy_initial_before_expanding">0dp</dimen>
+
+    <!-- group -->
+    <dimen name="viewgroup_min_height">150dp</dimen>
+    <dimen name="viewgroup_min_width">50dp</dimen>
+    <dimen name="viewgroup_padding_left">50dp</dimen>
+    <dimen name="viewgroup_padding_top">50dp</dimen>
+    <dimen name="viewgroup_padding_bottom">0dp</dimen>
+
+    <!-- item -->
+    <dimen name="viewitem_fixed_height">100dp</dimen>
+
+    <!-- chrome -->
+    <dimen name="button_remove_height">80dp</dimen>
+
+    <!-- dragshadow width -->
+    <dimen name="drag_shadow_width">300dp</dimen>
+
+    <!-- scroll control -->
+    <dimen name="scrollcontrol_width_drag_off">0dp</dimen>
+    <dimen name="scrollcontrol_width_drag_out">30dp</dimen>
+    <dimen name="scrollcontrol_width_drag_over">150dp</dimen>
+    <dimen name="scrollcontrol_scroll_by">100dp</dimen>
+    <dimen name="scrollcontrol_up_down_offset">140dp</dimen>
+
+    <!-- scroll control -->
+    <dimen name="scrollview_up_down_offset">20dp</dimen>
+
+</resources>

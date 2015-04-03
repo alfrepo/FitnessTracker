@@ -1,0 +1,136 @@
+<group color="red">
+	<item/>
+	<item/>
+	<group>	
+		<item/>
+	</group>
+</group>
+<item/>
+<item/>
+<group>
+	<item/>
+</group>
+
+
+
+
+<item id=1 type=1 color="red" name="Brust" Beschreibung="Beschreibung" id="123">
+	<set id=1 type=1 weight=20 repetition=10>
+	<set id=2 type=1 weight=20 repetition=10>
+</item>
+
+
+
+<dateTime date=19.03.2015 time="21.48">
+	<item id=1 type=1 color="red" name="Brust" Beschreibung="Beschreibung" id="123">
+		<set id=1 type= type=1 weight=22 repetition=10>
+	</item>
+</dateTime>
+
+
+
+
+
+getHistoryAfter(Date)
+
+getArchive
+
+getMainList
+
+
+
+========================================================================================================================
+STACK
+
+
+CONTENT
+idItem idContentItem order
+
+
+ITEMS
+id type="stack"
+id type="group" color name describtion
+id type="entry" color name describtion icon
+
+
+SETS
+setId setType
+set1 setType1
+
+
+SETTYPES
+setType property type
+setType1 repetition int 
+setType1 weight int
+
+
+SETCONTENTS
+setId property type value
+set1 repetition int 10
+set1 weight int 22
+
+
+
+
+
+STATISTICS
+id dateTime idSet value weight
+
+idContainer property value type
+
+========================================================================================================================
+
+
+
+Group
+|
+Item
+|
+Entry
+|
+EntryValue
+
+
+
+
+
+Class=UserItemValueType
+id=1 name=weightRepetition 	userItemValueType=UserItemValueTypeWeightRepetition unitXAchse=Kg unitYAchse=Repetitions
+id=2 name=faceCOlor 		userItemValueType=UserItemValueTypeFaceColor
+id=3 name=Weight 			userItemValueType=UserItemValueTypeGewicht			value=0 unit=Kg
+
+
+Class=UserItemEntries
+id=222 type=weightRepetition
+id=223 type=weightRepetition
+
+
+Class=UserItemEntryValues
+entryId=222 xAchseValue=100  yAchseValue=10  dateTime=29.03.2015:13.25.12
+entryId=222 xAchseValue=104  yAchseValue=10  dateTime=29.03.2015:13.26.00
+entryId=222 xAchseValue=105  yAchseValue=10  dateTime=29.03.2015:13.27.05
+entryId=223 xAchseValue=80  yAchseValue=11  dateTime=29.03.2015:13.27.05
+entryId=223 xAchseValue=70  yAchseValue=14  dateTime=29.03.2015:13.27.05
+
+
+Class=UserItems
+id=555 type=atom entries={222, 223, 224}
+id=556 type=atom entries={225}
+id=991 type=group items={555,556}
+id=992 type=group items={991}
+
+
+
+========================================
+Vorteile des DOkumentenbasierten Speichers:
+- Reihenfolge wird implizit gespeichert bei Zuordnung
+- man kann dynamisch die DB ändern, ohne explizit das Schema modifizieren zu müssen! Eine SPalte (attribut) kommt einfach in die Dokumente derselben Klassen dazu
+
+Nachteile:
+- man kann nicht so gut FIltern. KeineWhere Clause
+
+
+
+
+
+

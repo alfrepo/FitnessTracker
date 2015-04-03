@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/topMostContainer"
+    android:animateLayoutChanges="false"
+    tools:context="de.fitnesstracker.ActivityMain">
+
+    <!-- Remove Bar -->
+    <de.fitnesstracker.ViewActionbarRemoveButton xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/removeButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <!-- Sliding Panel -->
+    <android.support.v4.widget.SlidingPaneLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sliding_pane_layout"
+        android:layout_below="@+id/removeButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- SlidingPane panel on the left -->
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Scrollbar on the left -->
+            <de.fitnesstracker.ViewScrollBarControl
+                android:id="@+id/scrollBarControlMain"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:background="#9b9cff63" />
+
+            <!-- Scroll widget at the top -->
+            <de.fitnesstracker.ViewScrollAreaTopBottom
+                android:id="@+id/scrollControlTopMain"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Scroll up"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/scrollBarControlMain"
+                android:layout_alignParentTop="true"
+                android:background="#9b9cff63"/>
+
+            <!-- Scroll widget at the bottom -->
+            <de.fitnesstracker.ViewScrollAreaTopBottom
+                android:id="@+id/scrollControlBottomMain"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="Scroll down"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/scrollBarControlMain"
+                android:layout_alignParentBottom="true"
+                android:background="#9b9cff63"/>
+
+
+           <!-- Scroller around Main Container -->
+            <ScrollView
+                android:id="@+id/scrollviewMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="false"
+                android:layout_below="@id/scrollControlTopMain"
+                android:layout_above="@id/scrollControlBottomMain"
+                android:layout_toRightOf="@id/scrollBarControlMain"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/white">
+
+                <!-- Main Container -->
+                <de.fitnesstracker.ViewParentContainer xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/parentContainerMain"
+                    app:childMarginsTop="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:orientation="vertical"
+                    android:animateLayoutChanges="false"
+                    android:background="@android:color/white">
+
+
+                    <de.fitnesstracker.ViewGroupAnimated
+                        android:id="@+id/group1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <de.fitnesstracker.ViewGroupAnimated
+                            android:id="@+id/group2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <de.fitnesstracker.ViewItemAnimated
+                                android:id="@+id/item2"
+                                android:layout_width="match_parent"
+                                android:layout_height="100px"
+                                >
+                            </de.fitnesstracker.ViewItemAnimated>
+
+
+                        </de.fitnesstracker.ViewGroupAnimated>
+
+                    </de.fitnesstracker.ViewGroupAnimated>
+
+                    <de.fitnesstracker.ViewGroupAnimated
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    />
+
+                    <de.fitnesstracker.ViewGroupAnimated
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    />
+
+                    <de.fitnesstracker.ViewGroupAnimated
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    />
+
+                    <de.fitnesstracker.ViewGroupAnimated
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    />
+
+                    <de.fitnesstracker.ViewGroupAnimated
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    />
+
+                    <de.fitnesstracker.ViewGroupAnimated
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    />
+
+                    <de.fitnesstracker.ViewGroupAnimated
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <de.fitnesstracker.ViewGroupAnimated
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <de.fitnesstracker.ViewGroupAnimated
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <de.fitnesstracker.ViewGroupAnimated
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </de.fitnesstracker.ViewParentContainer>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+
+        <!-- SlidingPane panel on the right -->
+        <RelativeLayout
+            android:id="@+id/layoutArchive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_purple"
+            android:layout_marginLeft="180dp"            >
+
+            <!-- Archive scrollbar on the right -->
+            <de.fitnesstracker.ViewScrollBarControl
+                android:id="@+id/scrollBarControlArchive"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="#9b9cff63" />
+
+            <!-- Archive scroll widget at the top -->
+            <de.fitnesstracker.ViewScrollAreaTopBottom
+                android:id="@+id/scrollControlTopArchive"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:text="Scroll up"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@id/scrollBarControlArchive"
+                android:background="#9b9cff63"/>
+
+            <!-- Archive scroll widget at the bottom -->
+            <de.fitnesstracker.ViewScrollAreaTopBottom
+                android:id="@+id/scrollControlBottomArchive"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@id/scrollBarControlArchive"
+                android:layout_height="10dp"
+                android:text="Scroll down"
+                android:background="#9b9cff63"/>
+
+            <ScrollView
+                android:id="@+id/scrollViewArchive"
+                android:layout_toLeftOf="@id/scrollBarControlArchive"
+                android:layout_below="@id/scrollControlTopArchive"
+                android:layout_above="@id/scrollControlBottomArchive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.fitnesstracker.ViewParentContainer xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/parentContainerArchive"
+                    app:childMarginsTop="30"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:orientation="vertical"
+                    android:animateLayoutChanges="false"
+                    android:background="@android:color/white">
+
+                    <de.fitnesstracker.ViewGroupAnimated
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <de.fitnesstracker.ViewGroupAnimated
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </de.fitnesstracker.ViewParentContainer>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <!-- TODO calc 50% for margin left -->
+
+    </android.support.v4.widget.SlidingPaneLayout>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<de.fitnesstracker.ViewGroupAnimated
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/group1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="de.mine.experiments.anim.animatedgroup.ViewGroupAnimatedActivity6"
+    />
